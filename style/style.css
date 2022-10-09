@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  color: #444444;
+
+}
+html{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  height: 100vh;
+  justify-content: space-around;
+}
+hr{
+  background-color: #e7e7e7;
+  height: 1px;
+  border: none;
+}
+.text-center{
+  text-align: center;
+}
+.p-3{
+  padding: 1rem;
+}
+.container{
+  padding: 5rem;
+}
+.pages{
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-container{
+  border: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.page-container {
+  /* aspect-ratio: 1/1; */
+  background: url("/resources/vaja_1.png");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 30rem;
+  height: 15rem;
+  transition: 250ms all ease-in-out;
+  border-radius: .3rem;
+
+}
+.page-container > a{
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms ease-in-out, visibility 251ms ease-in-out;
+  visibility: hidden;
+}
+.page-container:hover{
+  backdrop-filter: sepia(90%);
+}
+.page-container:hover > a{
+  background-color: #444444;
+  color: white;
+  visibility: visible;
+}
+#main{
+  flex-grow: 1;
+}
+header{
+  background-color: #fafafa;
+}
+footer{
+  text-align: center;
+  background-color: #fafafa;
+  padding: 1rem;
+}
